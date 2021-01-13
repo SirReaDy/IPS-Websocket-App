@@ -3,7 +3,17 @@ Invision Power Board Application that connects to a Game-Server using WebSocket 
 Customizable options up to 4 products.
 Option to customize your own commands by providing $command and $arguments.
 
-Examples:
+
+Features:  
+[ x ] Custom commands on console.  
+[ x ] Custom commands in Game-Chat.  
+[ x ] SteamID integration.  
+[ x ] Product Selection.  
+[ - ] Multiple Servers. ( comming soon) 
+
+---
+
+Examples:  
 
 In-Game chat :
 ```
@@ -26,8 +36,8 @@ Will add the user that bought a specific product to the VIP group.
 ```
 <img src="https://i.imgur.com/xXoamOX.png" alt="IPS app">
 
-Tested with Rust.
-Requires:
-https://invisioncommunity.com/files/file/8170-steam-profile-integration/
-IPS Nexus (Commerce app)
+Tested with Rust  
+Requires:  
+[ x ] https://invisioncommunity.com/files/file/8170-steam-profile-integration/  
+[ x ] IPS Nexus (Commerce app)  
 
