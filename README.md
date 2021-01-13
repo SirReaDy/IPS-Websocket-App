@@ -24,7 +24,7 @@ $steamID = true
 Result:
 Will add the user that bought a specific product to the VIP group.
 ```
-<img src="https://i.imgur.com/xXoamOX.png" alt="IPS app" ">
+<img src="https://i.imgur.com/xXoamOX.png" alt="IPS app">
 
 Tested with Rust.
 Requires:
