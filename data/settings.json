@@ -1,5 +1,77 @@
 [
     {
+        "key": "botusername",
+        "default": "IPS Bot"
+    },
+    {
+        "key": "description",
+        "default": "user just bought"
+    },
+    {
+        "key": "discord_author_name",
+        "default": "Even"
+    },
+    {
+        "key": "discord_author_url",
+        "default": ""
+    },
+    {
+        "key": "discord_color",
+        "default": "#ffffff"
+    },
+    {
+        "key": "discord_field_1",
+        "default": ""
+    },
+    {
+        "key": "discord_field_1_name",
+        "default": ""
+    },
+    {
+        "key": "discord_field_1_value",
+        "default": ""
+    },
+    {
+        "key": "discord_field_2",
+        "default": ""
+    },
+    {
+        "key": "discord_field_2_name",
+        "default": ""
+    },
+    {
+        "key": "discord_field_2_value",
+        "default": ""
+    },
+    {
+        "key": "discord_field_3",
+        "default": ""
+    },
+    {
+        "key": "discord_field_3_name",
+        "default": ""
+    },
+    {
+        "key": "discord_field_3_value",
+        "default": ""
+    },
+    {
+        "key": "discord_hook",
+        "default": ""
+    },
+    {
+        "key": "discord_id",
+        "default": ""
+    },
+    {
+        "key": "discord_title",
+        "default": "New Item sold!"
+    },
+    {
+        "key": "enable_discord",
+        "default": ""
+    },
+    {
         "key": "rust_ip",
         "default": ""
     },

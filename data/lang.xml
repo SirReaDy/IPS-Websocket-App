@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <language>
- <app key="rconrust" version="10000">
+ <app key="rconrust" version="10001">
   <word key="__app_rconrust" js="0">RconRust</word>
   <word key="menu__rust_settings" js="0">Settings</word>
   <word key="menu__rconrust_rust" js="0">Rust Rcon</word>
@@ -35,6 +35,29 @@
   <word key="rust_product_4_comamnd" js="0">Command</word>
   <word key="rust_product_4_arguments" js="0">Arguments</word>
   <word key="rust_product_4_products" js="0">Products</word>
+  <word key="rust__discord" js="0">Discord Settings</word>
+  <word key="enable_discord" js="0">Enable Discord</word>
+  <word key="botusername" js="0">Bot Username</word>
+  <word key="botusername_desc" js="0"><![CDATA[<p class='ipsMessage ipsMessage_info'>Bot Username to be used as Webhook</p>]]></word>
+  <word key="discord_id" js="0">Discord id</word>
+  <word key="discord_hook" js="0">Discord hook</word>
+  <word key="discord_hook_desc" js="0"><![CDATA[<p class='ipsMessage ipsMessage_info'>https://discord.com/api/webhooks/&#36;discord_id/&#36;discord_hook</p>]]></word>
+  <word key="description" js="0">Description</word>
+  <word key="description_desc" js="0"><![CDATA[  <p class='ipsMessage ipsMessage_info'>&#36;steamID  _text_ &#36;itemID</p>]]></word>
+  <word key="discord_color" js="0">Color</word>
+  <word key="discord_color_desc" js="0"><![CDATA[ <p class='ipsMessage ipsMessage_info'>Color to be used on the left side of the panel</p>]]></word>
+  <word key="discord_author_name" js="0">Author Name</word>
+  <word key="discord_author_url" js="0">Author Url</word>
+  <word key="discord_title" js="0">Title</word>
+  <word key="discord_field_1" js="0">Extra Field 1 </word>
+  <word key="discord_field_1_name" js="0">Name</word>
+  <word key="discord_field_1_value" js="0">Value</word>
+  <word key="discord_field_2" js="0">Extra Field 2</word>
+  <word key="discord_field_2_name" js="0">Name</word>
+  <word key="discord_field_2_value" js="0">Value</word>
+  <word key="discord_field_3" js="0">Extra Field 3</word>
+  <word key="discord_field_3_name" js="0">Name</word>
+  <word key="discord_field_3_value" js="0">Value</word>
   <word key="rust_ip" js="0">Server IP</word>
   <word key="rust_port" js="0">Rcon Port</word>
   <word key="rust_password" js="0">Rcon Password</word>

@@ -6,13 +6,16 @@ if ( !\defined( '\IPS\SUITE_UNIQUE_KEY' ) )
 	exit;
 }
 use WebSocket\Client;
+
 class rconrust_hook_main extends _HOOK_CLASS_
 {
 
 public function onPurchaseGenerated( \IPS\nexus\Purchase $purchase, \IPS\nexus\Invoice $invoice )
     {
 	try
-	{
+	{	
+
+      
 	  			$ip = \IPS\Settings::i()->rust_ip;
 	  			$rcon_port = \IPS\Settings::i()->rust_port; 	 
 	     		$rcon_pass = \IPS\Settings::i()->rust_password; 
@@ -28,9 +31,7 @@ public function onPurchaseGenerated( \IPS\nexus\Purchase $purchase, \IPS\nexus\I
                 	{
                   	$memberID = '';
                		}
-      		
-	   // if ( in_array( $this->id, array( 1, 2, 3, 4, 5 ) ) )
- 
+
            if ( \IPS\Settings::i()->rust_product_1_on == 1 AND  \in_array( $this->id, explode( ',', \IPS\Settings::i()->rust_product_1_products )) )
 		    {
 
@@ -100,8 +101,102 @@ public function onPurchaseGenerated( \IPS\nexus\Purchase $purchase, \IPS\nexus\I
 	            $result = json_decode($client->receive());
 	        
 			}
-			
-			return parent::onPurchaseGenerated( $purchase, $invoice );
+		
+  
+         if ( \IPS\Settings::i()->enable_discord == 1) {
+      
+ 				$discord_id = \IPS\Settings::i()->discord_id;
+      			$discord_hook = \IPS\Settings::i()->discord_hook;
+      			$url = "https://discord.com/api/webhooks/{$discord_id}/{$discord_hook}";
+    			
+	  			$timestamp = date("c", strtotime("now"));
+      		
+				$botusername  = \IPS\Settings::i()->botusername; 
+      			$discord_title  = \IPS\Settings::i()->discord_title;  
+     			$description  = \IPS\Settings::i()->description;  
+      			$color  = \IPS\Settings::i()->discord_color;  
+            	$author_name  = \IPS\Settings::i()->discord_author_name;  
+            	$author_url  = \IPS\Settings::i()->discord_author_url;  
+    			$purchaseItem = $purchase->name;
+            	$member = $purchase->member->steamid;
+           
+           		$field_1_name = \IPS\Settings::i()->discord_field_1_name;  
+                $field_1_value = \IPS\Settings::i()->discord_field_1_value;
+                $field_2_name = \IPS\Settings::i()->discord_field_2_name;  
+                $field_2_value = \IPS\Settings::i()->discord_field_2_value; 
+                $field_3_name = \IPS\Settings::i()->discord_field_3_name;  
+                $field_3_value = \IPS\Settings::i()->discord_field_3_value; 
+      
+
+$hookObject = json_encode([
+
+    "username" => "$botusername",
+    "tts" => false,
+    "embeds" => [
+
+        [
+           
+            "title" => "$discord_title",
+            "type" => "rich",
+            "description" => "$member $description $purchaseItem",
+            "timestamp" => "$timestamp",
+            "color" => hexdec( "$color" ),
+            "author" => [
+                "name" => "$author_name",
+                "url" => "$author_url"
+            ],
+          
+		
+		"fields" => [
+         
+                [
+                    "name" => "$field_1_name",
+                    "value" => "$field_1_value",
+                    "inline" => true
+                ],
+          
+          
+                [
+                    "name" => "$field_2_name",
+                    "value" => "$field_2_value",
+                    "inline" => true
+                ],
+        
+         
+                [
+                    "name" => "$field_3_name",
+                    "value" => "$field_3_value",
+                    "inline" => true
+                ]
+      
+            ]
+       
+    
+        ]
+    ]
+
+], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE );
+
+$ch = curl_init();
+
+curl_setopt_array( $ch, [
+    CURLOPT_URL => $url,
+    CURLOPT_POST => true,
+    CURLOPT_POSTFIELDS => $hookObject,
+    CURLOPT_HTTPHEADER => [
+        "Content-Type: application/json"
+    ]
+]);
+
+$response = curl_exec( $ch );
+curl_close( $ch );  
+      
+      
+         }
+      
+
+return parent::onPurchaseGenerated( $purchase, $invoice );   
+
 	  
 	}
 	catch ( \RuntimeException $e )
@@ -116,6 +211,9 @@ public function onPurchaseGenerated( \IPS\nexus\Purchase $purchase, \IPS\nexus\I
 		}
 	}
     }
+  
+
+  
   
 
 

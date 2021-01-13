@@ -62,6 +62,46 @@ class _settings extends \IPS\Dispatcher\Controller
 		$form->add(new \IPS\Helpers\Form\Text('rust_password', \IPS\Settings::i()->rust_password, false, array(), null,
             null, null, 'rust_password'));
 		
+		
+		$form->addTab( 'rust__discord' );
+        $form->add( new \IPS\Helpers\Form\YesNo( 'enable_discord', \IPS\Settings::i()->enable_discord, TRUE, array( 'togglesOn' => array( 'discord_id', 'discord_hook','botusername' , 'discord_author_url', 'discord_title', 'discord_author_name', 'description','discord_color', ) ) ) );
+        $form->add(new \IPS\Helpers\Form\Text('discord_id', \IPS\Settings::i()->discord_id, false, array(), null,
+            null, null, 'discord_id'));
+		$form->add(new \IPS\Helpers\Form\Text('discord_hook', \IPS\Settings::i()->discord_hook, false, array(), null,
+            null, null, 'discord_hook'));
+		$form->add(new \IPS\Helpers\Form\Text('botusername', \IPS\Settings::i()->botusername, false, array(), null,
+            null, null, 'botusername'));
+		$form->add(new \IPS\Helpers\Form\Text('discord_title', \IPS\Settings::i()->discord_title, false, array(), null,
+            null, null, 'discord_title'));
+		$form->add(new \IPS\Helpers\Form\Text('description', \IPS\Settings::i()->description, false, array(), null,
+            null, null, 'description'));
+		$form->add(new \IPS\Helpers\Form\Color('discord_color', \IPS\Settings::i()->discord_color, false, array(), null,
+            null, null, 'discord_color'));
+		$form->add(new \IPS\Helpers\Form\Text('discord_author_name', \IPS\Settings::i()->discord_author_name, false, array(), null,
+            null, null, 'discord_author_name'));
+		$form->add(new \IPS\Helpers\Form\Text('discord_author_url', \IPS\Settings::i()->discord_author_url, false, array(), null,
+            null, null, 'discord_author_url'));
+		
+		$form->addHeader( 'discord_field_1' );
+		$form->add(new \IPS\Helpers\Form\Text('discord_field_1_name', \IPS\Settings::i()->discord_field_1_name, false, array(), null,
+            null, null, 'discord_field_1_name'));
+		$form->add(new \IPS\Helpers\Form\Text('discord_field_1_value', \IPS\Settings::i()->discord_field_1_value, false, array(), null,
+            null, null, 'discord_field_1_value'));			
+	
+		$form->addHeader( 'discord_field_2' );
+		$form->add(new \IPS\Helpers\Form\Text('discord_field_2_name', \IPS\Settings::i()->discord_field_2_name, false, array(), null,
+            null, null, 'discord_field_2_name'));
+		$form->add(new \IPS\Helpers\Form\Text('discord_field_2_value', \IPS\Settings::i()->discord_field_2_value, false, array(), null,
+            null, null, 'discord_field_2_value'));
+			
+		$form->addHeader( 'discord_field_3' );
+		$form->add(new \IPS\Helpers\Form\Text('discord_field_3_name', \IPS\Settings::i()->discord_field_3_name, false, array(), null,
+            null, null, 'discord_field_3_name'));
+		$form->add(new \IPS\Helpers\Form\Text('discord_field_3_value', \IPS\Settings::i()->discord_field_3_value, false, array(), null,
+            null, null, 'discord_field_3_value'));
+			
+		
+		
 	
 	
 		$form->addTab( 'rust_product_1_title' );

@@ -1,0 +1,22 @@
+{
+    "normal": {
+        "added": [
+            "discord_field_1",
+            "discord_field_1_name",
+            "discord_field_1_value",
+            "discord_field_2",
+            "discord_field_2_name",
+            "discord_field_2_value",
+            "discord_field_3",
+            "discord_field_3_name",
+            "discord_field_3_value"
+        ],
+        "edited": [],
+        "removed": []
+    },
+    "js": {
+        "added": [],
+        "edited": [],
+        "removed": []
+    }
+}

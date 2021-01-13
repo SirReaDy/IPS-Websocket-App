@@ -37,7 +37,21 @@
             "36": "rust_product_1_steamID_desc",
             "37": "rust_product_2_steamID_desc",
             "38": "rust_product_3_steamID_desc",
-            "39": "rust_product_4_steamID_desc"
+            "39": "rust_product_4_steamID_desc",
+            "40": "rust__discord",
+            "41": "enable_discord",
+            "42": "botusername",
+            "43": "botusername_desc",
+            "44": "discord_id",
+            "45": "discord_hook",
+            "46": "discord_hook_desc",
+            "47": "description",
+            "48": "description_desc",
+            "49": "discord_color",
+            "50": "discord_color_desc",
+            "51": "discord_author_name",
+            "52": "discord_author_url",
+            "53": "discord_title"
         },
         "edited": [],
         "removed": []

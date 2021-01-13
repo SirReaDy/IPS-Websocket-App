@@ -27,7 +27,16 @@
         "rust_product_1_steamID",
         "rust_product_2_steamID",
         "rust_product_3_steamID",
-        "rust_product_4_steamID"
+        "rust_product_4_steamID",
+        "botusername",
+        "description",
+        "discord_author_name",
+        "discord_author_url",
+        "discord_color",
+        "discord_hook",
+        "discord_id",
+        "discord_title",
+        "enable_discord"
     ],
     "edited": [],
     "removed": []
