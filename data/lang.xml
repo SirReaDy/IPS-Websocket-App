@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language>
+ <app key="rconrust" version="10000">
+  <word key="__app_rconrust" js="0">RconRust</word>
+  <word key="menu__rust_settings" js="0">Settings</word>
+  <word key="menu__rconrust_rust" js="0">Rust Rcon</word>
+  <word key="menu__rconrust_rust_settings" js="0">Settings</word>
+  <word key="acplogs__rust_settings" js="0">Edited Rust Rcon settings</word>
+  <word key="rust__gen_settings" js="0">General Settings</word>
+  <word key="rust_product_1_on" js="0">Enable Product 1</word>
+  <word key="rust_product_1_steamID" js="0">Enable Steam ID</word>
+  <word key="rust_product_1_steamID_desc" js="0"><![CDATA[<p class='ipsMessage ipsMessage_info'>If enabled the message will be sent as: &#36;command &#36;steamID &#36;arguments</code></p>]]></word>
+  <word key="rust_product_1_title" js="0">Product 1</word>
+  <word key="rust_product_1_comamnd" js="0">Command</word>
+  <word key="rust_product_1_arguments" js="0">Arguments</word>
+  <word key="rust_product_1_products" js="0">Products</word>
+  <word key="rust_product_2_on" js="0">Enable Product 2</word>
+  <word key="rust_product_2_steamID" js="0">Enable Steam ID</word>
+  <word key="rust_product_2_steamID_desc" js="0"><![CDATA[<p class='ipsMessage ipsMessage_info'>If enabled the message will be sent as: &#36;command &#36;steamID &#36;arguments</code></p>]]></word>
+  <word key="rust_product_2_title" js="0">Product 2</word>
+  <word key="rust_product_2_comamnd" js="0">Command</word>
+  <word key="rust_product_2_arguments" js="0">Arguments</word>
+  <word key="rust_product_2_products" js="0">Products</word>
+  <word key="rust_product_3_on" js="0">Enable Product 3</word>
+  <word key="rust_product_3_steamID" js="0">Enable Steam ID</word>
+  <word key="rust_product_3_steamID_desc" js="0"><![CDATA[<p class='ipsMessage ipsMessage_info'>If enabled the message will be sent as: &#36;command &#36;steamID &#36;arguments</code></p>]]></word>
+  <word key="rust_product_3_title" js="0">Product 3</word>
+  <word key="rust_product_3_comamnd" js="0">Command</word>
+  <word key="rust_product_3_arguments" js="0">Arguments</word>
+  <word key="rust_product_3_products" js="0">Products</word>
+  <word key="rust_product_4_on" js="0">Enable Product 4</word>
+  <word key="rust_product_4_steamID" js="0">Enable Steam ID</word>
+  <word key="rust_product_4_steamID_desc" js="0"><![CDATA[<p class='ipsMessage ipsMessage_info'>If enabled the message will be sent as: &#36;command &#36;steamID &#36;arguments</code></p>]]></word>
+  <word key="rust_product_4_title" js="0">Product 4</word>
+  <word key="rust_product_4_comamnd" js="0">Command</word>
+  <word key="rust_product_4_arguments" js="0">Arguments</word>
+  <word key="rust_product_4_products" js="0">Products</word>
+  <word key="rust_ip" js="0">Server IP</word>
+  <word key="rust_port" js="0">Rcon Port</word>
+  <word key="rust_password" js="0">Rcon Password</word>
+ </app>
+</language>

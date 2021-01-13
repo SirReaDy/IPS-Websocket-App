@@ -1,0 +1,114 @@
+[
+    {
+        "key": "rust_ip",
+        "default": ""
+    },
+    {
+        "key": "rust_password",
+        "default": ""
+    },
+    {
+        "key": "rust_port",
+        "default": ""
+    },
+    {
+        "key": "rust_product_1_arguments",
+        "default": ""
+    },
+    {
+        "key": "rust_product_1_comamnd",
+        "default": ""
+    },
+    {
+        "key": "rust_product_1_on",
+        "default": ""
+    },
+    {
+        "key": "rust_product_1_products",
+        "default": ""
+    },
+    {
+        "key": "rust_product_1_steamID",
+        "default": ""
+    },
+    {
+        "key": "rust_product_1_title",
+        "default": "Product 1"
+    },
+    {
+        "key": "rust_product_2_arguments",
+        "default": ""
+    },
+    {
+        "key": "rust_product_2_comamnd",
+        "default": ""
+    },
+    {
+        "key": "rust_product_2_on",
+        "default": ""
+    },
+    {
+        "key": "rust_product_2_products",
+        "default": ""
+    },
+    {
+        "key": "rust_product_2_steamID",
+        "default": ""
+    },
+    {
+        "key": "rust_product_2_title",
+        "default": ""
+    },
+    {
+        "key": "rust_product_3_arguments",
+        "default": ""
+    },
+    {
+        "key": "rust_product_3_comamnd",
+        "default": ""
+    },
+    {
+        "key": "rust_product_3_on",
+        "default": ""
+    },
+    {
+        "key": "rust_product_3_products",
+        "default": ""
+    },
+    {
+        "key": "rust_product_3_steamID",
+        "default": ""
+    },
+    {
+        "key": "rust_product_3_title",
+        "default": ""
+    },
+    {
+        "key": "rust_product_4_arguments",
+        "default": ""
+    },
+    {
+        "key": "rust_product_4_comamnd",
+        "default": ""
+    },
+    {
+        "key": "rust_product_4_on",
+        "default": ""
+    },
+    {
+        "key": "rust_product_4_products",
+        "default": ""
+    },
+    {
+        "key": "rust_product_4_steamID",
+        "default": ""
+    },
+    {
+        "key": "rust_product_4_title",
+        "default": ""
+    },
+    {
+        "key": "rust_products",
+        "default": ""
+    }
+]

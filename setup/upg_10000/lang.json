@@ -1,0 +1,50 @@
+{
+    "normal": {
+        "added": {
+            "0": "__app_rconrust",
+            "1": "menu__rust_settings",
+            "2": "rust__gen_settings",
+            "3": "rust_ip",
+            "4": "rust_port",
+            "5": "rust_password",
+            "9": "acplogs__rust_settings",
+            "10": "menu__rconrust_rust",
+            "11": "menu__rconrust_rust_settings",
+            "12": "rust_product_1_title",
+            "13": "rust_product_1_comamnd",
+            "14": "rust_product_1_arguments",
+            "15": "rust_product_1_products",
+            "16": "rust_product_2_on",
+            "17": "rust_product_2_title",
+            "18": "rust_product_2_comamnd",
+            "19": "rust_product_2_arguments",
+            "20": "rust_product_2_products",
+            "21": "rust_product_3_on",
+            "22": "rust_product_3_title",
+            "23": "rust_product_3_comamnd",
+            "24": "rust_product_3_arguments",
+            "25": "rust_product_3_products",
+            "26": "rust_product_4_on",
+            "27": "rust_product_4_title",
+            "28": "rust_product_4_comamnd",
+            "29": "rust_product_4_arguments",
+            "30": "rust_product_4_products",
+            "31": "rust_product_1_on",
+            "32": "rust_product_1_steamID",
+            "33": "rust_product_2_steamID",
+            "34": "rust_product_3_steamID",
+            "35": "rust_product_4_steamID",
+            "36": "rust_product_1_steamID_desc",
+            "37": "rust_product_2_steamID_desc",
+            "38": "rust_product_3_steamID_desc",
+            "39": "rust_product_4_steamID_desc"
+        },
+        "edited": [],
+        "removed": []
+    },
+    "js": {
+        "added": [],
+        "edited": [],
+        "removed": []
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "main": {
+        "type": "C",
+        "class": "\\IPS\\nexus\\Package"
+    }
+}
