@@ -9,7 +9,7 @@ Features:
 - [x] Custom commands in Game-Chat.  
 - [x] SteamID integration.  
 - [x] Product Selection.  
-- [ ] Multiple Servers. ( comming soon) 
+- [x] Discord Notification.
 
 ---
 
@@ -34,7 +34,7 @@ $steamID = true
 Result:
 Will add the user that bought a specific product to the VIP group.
 ```
-<img src="https://i.imgur.com/xXoamOX.png" alt="IPS app">
+<img src="https://i.imgur.com/dijZNKe.png" alt="IPS app">
 
 Tested with Rust  
 Requires:  
