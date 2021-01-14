@@ -46,9 +46,9 @@ $lang = array(
 	'enable_discord'	=> "Enable Discord",
 	'botusername'	=> "Bot Username",
 	'botusername_desc'	=> "<p class='ipsMessage ipsMessage_info'>Bot Username to be used as Webhook</p>", 
-	'discord_id'	=> "Discord id",
-	'discord_hook'	=> "Discord hook",
-	'discord_hook_desc'	=> "<p class='ipsMessage ipsMessage_info'>https://discord.com/api/webhooks/&#36;discord_id/&#36;discord_hook</p>",
+
+	'discord_hook'	=> "Discord Webhook Link",
+	'discord_hook_desc'	=> "<p class='ipsMessage ipsMessage_info'>Insert the full link from the webhook</p>",
 	'description'	=> "Description",
 	'description_desc'	=> "  <p class='ipsMessage ipsMessage_info'>&#36;steamID  _text_ &#36;itemID</p>",
 	'discord_color'	=> "Color",
@@ -57,16 +57,7 @@ $lang = array(
 	'discord_author_url'	=> "Author Url",
 	'discord_title'	=> "Title",
 	
-	'discord_field_1'	=> "Extra Field 1 ",
 
-	'discord_field_1_name'	=> "Name",
-	'discord_field_1_value'	=> "Value",
-	'discord_field_2'	=> "Extra Field 2",
-	'discord_field_2_name'	=> "Name",
-	'discord_field_2_value'	=> "Value",
-	'discord_field_3'	=> "Extra Field 3",
-	'discord_field_3_name'	=> "Name",
-	'discord_field_3_value'	=> "Value",
 
 	
 	

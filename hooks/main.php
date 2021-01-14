@@ -20,8 +20,7 @@ public function onPurchaseGenerated( \IPS\nexus\Purchase $purchase, \IPS\nexus\I
 	  			$rcon_port = \IPS\Settings::i()->rust_port; 	 
 	     		$rcon_pass = \IPS\Settings::i()->rust_password; 
 	            $client = new Client("ws://{$ip}:{$rcon_port}/{$rcon_pass}");
-
-     			
+		
       
       			if ( \IPS\Settings::i()->rust_product_1_steamID == 1  or \IPS\Settings::i()->rust_product_2_steamID == 1 or \IPS\Settings::i()->rust_product_3_steamID == 1 or \IPS\Settings::i()->rust_product_4_steamID == 1)
                		{
@@ -32,7 +31,7 @@ public function onPurchaseGenerated( \IPS\nexus\Purchase $purchase, \IPS\nexus\I
                   	$memberID = '';
                		}
 
-           if ( \IPS\Settings::i()->rust_product_1_on == 1 AND  \in_array( $this->id, explode( ',', \IPS\Settings::i()->rust_product_1_products )) )
+           if ( \IPS\Settings::i()->rust_product_1_on == 1 AND  \in_array( $this->id, explode( ',', \IPS\Settings::i()->rust_product_1_products )))
 		    {
 
 	           $prod1_com = \IPS\Settings::i()->rust_product_1_comamnd;
@@ -50,7 +49,7 @@ public function onPurchaseGenerated( \IPS\nexus\Purchase $purchase, \IPS\nexus\I
 	        
 			}
       
-        if ( \IPS\Settings::i()->rust_product_2_on == 1 AND  \in_array( $this->id, explode( ',', \IPS\Settings::i()->rust_product_2_products )) )
+           if ( \IPS\Settings::i()->rust_product_2_on == 1 AND  \in_array( $this->id, explode( ',', \IPS\Settings::i()->rust_product_2_on )))
 		    {
 
 	           $prod2_com = \IPS\Settings::i()->rust_product_2_comamnd;
@@ -67,7 +66,7 @@ public function onPurchaseGenerated( \IPS\nexus\Purchase $purchase, \IPS\nexus\I
 	            $result = json_decode($client->receive());
 	        
 			}
-      	 if ( \IPS\Settings::i()->rust_product_3_on == 1 AND  \in_array( $this->id, explode( ',', \IPS\Settings::i()->rust_product_3_products )) )
+           if ( \IPS\Settings::i()->rust_product_3_on == 1 AND  \in_array( $this->id, explode( ',', \IPS\Settings::i()->rust_product_3_on )))
 		    {
 
 	           $prod3_com = \IPS\Settings::i()->rust_product_3_comamnd;
@@ -105,9 +104,8 @@ public function onPurchaseGenerated( \IPS\nexus\Purchase $purchase, \IPS\nexus\I
   
          if ( \IPS\Settings::i()->enable_discord == 1) {
       
- 				$discord_id = \IPS\Settings::i()->discord_id;
-      			$discord_hook = \IPS\Settings::i()->discord_hook;
-      			$url = "https://discord.com/api/webhooks/{$discord_id}/{$discord_hook}";
+
+      			$url = \IPS\Settings::i()->discord_hook;
     			
 	  			$timestamp = date("c", strtotime("now"));
       		
@@ -119,13 +117,12 @@ public function onPurchaseGenerated( \IPS\nexus\Purchase $purchase, \IPS\nexus\I
             	$author_url  = \IPS\Settings::i()->discord_author_url;  
     			$purchaseItem = $purchase->name;
             	$member = $purchase->member->steamid;
-           
-           		$field_1_name = \IPS\Settings::i()->discord_field_1_name;  
-                $field_1_value = \IPS\Settings::i()->discord_field_1_value;
-                $field_2_name = \IPS\Settings::i()->discord_field_2_name;  
-                $field_2_value = \IPS\Settings::i()->discord_field_2_value; 
-                $field_3_name = \IPS\Settings::i()->discord_field_3_name;  
-                $field_3_value = \IPS\Settings::i()->discord_field_3_value; 
+           		$memberName = $purchase->member->name;
+          	
+            	$memberLink = "https://steamcommunity.com/profiles/{$member}";
+             	
+           	
+
       
 
 $hookObject = json_encode([
@@ -133,45 +130,36 @@ $hookObject = json_encode([
     "username" => "$botusername",
     "tts" => false,
     "embeds" => [
-
         [
-           
             "title" => "$discord_title",
             "type" => "rich",
-            "description" => "$member $description $purchaseItem",
             "timestamp" => "$timestamp",
             "color" => hexdec( "$color" ),
+           	"fields" => [
+                
+                [
+                    "name" => "User",
+                    "value" => "$memberName",
+                    "inline" => false
+                ],
+               
+                [
+                    "name" => "Steam Link",
+                    "value" => "$memberLink",
+                    "inline" => false
+                ],
+              
+                [
+                    "name" => "Product",
+                    "value" => "$purchaseItem",
+                    "inline" => false
+                ]
+            ],
+          
             "author" => [
                 "name" => "$author_name",
                 "url" => "$author_url"
             ],
-          
-		
-		"fields" => [
-         
-                [
-                    "name" => "$field_1_name",
-                    "value" => "$field_1_value",
-                    "inline" => true
-                ],
-          
-          
-                [
-                    "name" => "$field_2_name",
-                    "value" => "$field_2_value",
-                    "inline" => true
-                ],
-        
-         
-                [
-                    "name" => "$field_3_name",
-                    "value" => "$field_3_value",
-                    "inline" => true
-                ]
-      
-            ]
-       
-    
         ]
     ]
 

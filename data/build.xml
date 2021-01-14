@@ -6,17 +6,7 @@
  <setting key="discord_author_name"><![CDATA[{"key":"discord_author_name","default":"Even"}]]></setting>
  <setting key="discord_author_url"><![CDATA[{"key":"discord_author_url","default":""}]]></setting>
  <setting key="discord_color"><![CDATA[{"key":"discord_color","default":"#ffffff"}]]></setting>
- <setting key="discord_field_1"><![CDATA[{"key":"discord_field_1","default":""}]]></setting>
- <setting key="discord_field_1_name"><![CDATA[{"key":"discord_field_1_name","default":""}]]></setting>
- <setting key="discord_field_1_value"><![CDATA[{"key":"discord_field_1_value","default":""}]]></setting>
- <setting key="discord_field_2"><![CDATA[{"key":"discord_field_2","default":""}]]></setting>
- <setting key="discord_field_2_name"><![CDATA[{"key":"discord_field_2_name","default":""}]]></setting>
- <setting key="discord_field_2_value"><![CDATA[{"key":"discord_field_2_value","default":""}]]></setting>
- <setting key="discord_field_3"><![CDATA[{"key":"discord_field_3","default":""}]]></setting>
- <setting key="discord_field_3_name"><![CDATA[{"key":"discord_field_3_name","default":""}]]></setting>
- <setting key="discord_field_3_value"><![CDATA[{"key":"discord_field_3_value","default":""}]]></setting>
  <setting key="discord_hook"><![CDATA[{"key":"discord_hook","default":""}]]></setting>
- <setting key="discord_id"><![CDATA[{"key":"discord_id","default":""}]]></setting>
  <setting key="discord_title"><![CDATA[{"key":"discord_title","default":"New Item sold!"}]]></setting>
  <setting key="enable_discord"><![CDATA[{"key":"enable_discord","default":""}]]></setting>
  <setting key="rust_ip"><![CDATA[{"key":"rust_ip","default":""}]]></setting>

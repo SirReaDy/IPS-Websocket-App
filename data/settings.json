@@ -20,47 +20,7 @@
         "default": "#ffffff"
     },
     {
-        "key": "discord_field_1",
-        "default": ""
-    },
-    {
-        "key": "discord_field_1_name",
-        "default": ""
-    },
-    {
-        "key": "discord_field_1_value",
-        "default": ""
-    },
-    {
-        "key": "discord_field_2",
-        "default": ""
-    },
-    {
-        "key": "discord_field_2_name",
-        "default": ""
-    },
-    {
-        "key": "discord_field_2_value",
-        "default": ""
-    },
-    {
-        "key": "discord_field_3",
-        "default": ""
-    },
-    {
-        "key": "discord_field_3_name",
-        "default": ""
-    },
-    {
-        "key": "discord_field_3_value",
-        "default": ""
-    },
-    {
         "key": "discord_hook",
-        "default": ""
-    },
-    {
-        "key": "discord_id",
         "default": ""
     },
     {

@@ -39,9 +39,8 @@
   <word key="enable_discord" js="0">Enable Discord</word>
   <word key="botusername" js="0">Bot Username</word>
   <word key="botusername_desc" js="0"><![CDATA[<p class='ipsMessage ipsMessage_info'>Bot Username to be used as Webhook</p>]]></word>
-  <word key="discord_id" js="0">Discord id</word>
-  <word key="discord_hook" js="0">Discord hook</word>
-  <word key="discord_hook_desc" js="0"><![CDATA[<p class='ipsMessage ipsMessage_info'>https://discord.com/api/webhooks/&#36;discord_id/&#36;discord_hook</p>]]></word>
+  <word key="discord_hook" js="0">Discord Webhook Link</word>
+  <word key="discord_hook_desc" js="0"><![CDATA[<p class='ipsMessage ipsMessage_info'>Insert the full link from the webhook</p>]]></word>
   <word key="description" js="0">Description</word>
   <word key="description_desc" js="0"><![CDATA[  <p class='ipsMessage ipsMessage_info'>&#36;steamID  _text_ &#36;itemID</p>]]></word>
   <word key="discord_color" js="0">Color</word>
@@ -49,15 +48,6 @@
   <word key="discord_author_name" js="0">Author Name</word>
   <word key="discord_author_url" js="0">Author Url</word>
   <word key="discord_title" js="0">Title</word>
-  <word key="discord_field_1" js="0">Extra Field 1 </word>
-  <word key="discord_field_1_name" js="0">Name</word>
-  <word key="discord_field_1_value" js="0">Value</word>
-  <word key="discord_field_2" js="0">Extra Field 2</word>
-  <word key="discord_field_2_name" js="0">Name</word>
-  <word key="discord_field_2_value" js="0">Value</word>
-  <word key="discord_field_3" js="0">Extra Field 3</word>
-  <word key="discord_field_3_name" js="0">Name</word>
-  <word key="discord_field_3_value" js="0">Value</word>
   <word key="rust_ip" js="0">Server IP</word>
   <word key="rust_port" js="0">Rcon Port</word>
   <word key="rust_password" js="0">Rcon Password</word>

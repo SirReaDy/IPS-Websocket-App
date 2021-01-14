@@ -64,9 +64,7 @@ class _settings extends \IPS\Dispatcher\Controller
 		
 		
 		$form->addTab( 'rust__discord' );
-        $form->add( new \IPS\Helpers\Form\YesNo( 'enable_discord', \IPS\Settings::i()->enable_discord, TRUE, array( 'togglesOn' => array( 'discord_id', 'discord_hook','botusername' , 'discord_author_url', 'discord_title', 'discord_author_name', 'description','discord_color', ) ) ) );
-        $form->add(new \IPS\Helpers\Form\Text('discord_id', \IPS\Settings::i()->discord_id, false, array(), null,
-            null, null, 'discord_id'));
+        $form->add( new \IPS\Helpers\Form\YesNo( 'enable_discord', \IPS\Settings::i()->enable_discord, TRUE, array( 'togglesOn' => array(  'discord_hook','botusername' , 'discord_author_url', 'discord_title', 'discord_author_name', 'description','discord_color', ) ) ) );
 		$form->add(new \IPS\Helpers\Form\Text('discord_hook', \IPS\Settings::i()->discord_hook, false, array(), null,
             null, null, 'discord_hook'));
 		$form->add(new \IPS\Helpers\Form\Text('botusername', \IPS\Settings::i()->botusername, false, array(), null,
@@ -82,23 +80,7 @@ class _settings extends \IPS\Dispatcher\Controller
 		$form->add(new \IPS\Helpers\Form\Text('discord_author_url', \IPS\Settings::i()->discord_author_url, false, array(), null,
             null, null, 'discord_author_url'));
 		
-		$form->addHeader( 'discord_field_1' );
-		$form->add(new \IPS\Helpers\Form\Text('discord_field_1_name', \IPS\Settings::i()->discord_field_1_name, false, array(), null,
-            null, null, 'discord_field_1_name'));
-		$form->add(new \IPS\Helpers\Form\Text('discord_field_1_value', \IPS\Settings::i()->discord_field_1_value, false, array(), null,
-            null, null, 'discord_field_1_value'));			
-	
-		$form->addHeader( 'discord_field_2' );
-		$form->add(new \IPS\Helpers\Form\Text('discord_field_2_name', \IPS\Settings::i()->discord_field_2_name, false, array(), null,
-            null, null, 'discord_field_2_name'));
-		$form->add(new \IPS\Helpers\Form\Text('discord_field_2_value', \IPS\Settings::i()->discord_field_2_value, false, array(), null,
-            null, null, 'discord_field_2_value'));
-			
-		$form->addHeader( 'discord_field_3' );
-		$form->add(new \IPS\Helpers\Form\Text('discord_field_3_name', \IPS\Settings::i()->discord_field_3_name, false, array(), null,
-            null, null, 'discord_field_3_name'));
-		$form->add(new \IPS\Helpers\Form\Text('discord_field_3_value', \IPS\Settings::i()->discord_field_3_value, false, array(), null,
-            null, null, 'discord_field_3_value'));
+
 			
 		
 		
@@ -111,7 +93,7 @@ class _settings extends \IPS\Dispatcher\Controller
 		$form->add(new \IPS\Helpers\Form\Text('rust_product_1_arguments', \IPS\Settings::i()->rust_product_1_arguments, false, array(), null,
             null, null, 'rust_product_1_arguments'));
 		$form->add( new \IPS\Helpers\Form\YesNo( 'rust_product_1_steamID', \IPS\Settings::i()->rust_product_1_steamID ) );
-		$form->add( new \IPS\Helpers\Form\Node( 'rust_product_1_products', ( \IPS\Settings::i()->rust_product_1_products ) ? explode( ',', \IPS\Settings::i()->rust_product_1_products ) : 0, FALSE, array( 'class' => '\IPS\nexus\Package', 'zeroVal' => 'all', 'multiple' => TRUE ), NULL, NULL, NULL, 'rust_product_1_products' ) );
+		$form->add( new \IPS\Helpers\Form\Node( 'rust_product_1_products', ( \IPS\Settings::i()->rust_product_1_products ) ? explode( ',', \IPS\Settings::i()->rust_product_1_products ) : 0, FALSE, array( 'class' => '\IPS\nexus\Package',  'multiple' => TRUE ), NULL, NULL, NULL, 'rust_product_1_products' ) );
 		
 		
 		$form->addTab( 'rust_product_2_title' );
@@ -121,7 +103,7 @@ class _settings extends \IPS\Dispatcher\Controller
 		$form->add(new \IPS\Helpers\Form\Text('rust_product_2_arguments', \IPS\Settings::i()->rust_product_2_arguments, false, array(), null,
             null, null, 'rust_product_2_arguments'));
 		$form->add( new \IPS\Helpers\Form\YesNo( 'rust_product_2_steamID', \IPS\Settings::i()->rust_product_2_steamID ) );
-		$form->add( new \IPS\Helpers\Form\Node( 'rust_product_2_products', ( \IPS\Settings::i()->rust_product_2_products ) ? explode( ',', \IPS\Settings::i()->rust_product_2_products ) : 0, FALSE, array( 'class' => '\IPS\nexus\Package', 'zeroVal' => 'all', 'multiple' => TRUE ), NULL, NULL, NULL, 'rust_product_2_products' ) );
+		$form->add( new \IPS\Helpers\Form\Node( 'rust_product_2_products', ( \IPS\Settings::i()->rust_product_2_products ) ? explode( ',', \IPS\Settings::i()->rust_product_2_products ) : 0, FALSE, array( 'class' => '\IPS\nexus\Package',  'multiple' => TRUE ), NULL, NULL, NULL, 'rust_product_2_products' ) );
 		
 
 		$form->addTab( 'rust_product_3_title' );
@@ -132,7 +114,7 @@ class _settings extends \IPS\Dispatcher\Controller
             null, null, 'rust_product_3_arguments'));
 	
 		$form->add( new \IPS\Helpers\Form\YesNo( 'rust_product_3_steamID', \IPS\Settings::i()->rust_product_3_steamID ) );
-		$form->add( new \IPS\Helpers\Form\Node( 'rust_product_3_products', ( \IPS\Settings::i()->rust_product_3_products ) ? explode( ',', \IPS\Settings::i()->rust_product_3_products ) : 0, FALSE, array( 'class' => 'IPS\nexus\Package', 'zeroVal' => 'all', 'multiple' => TRUE ), NULL, NULL, NULL, 'rust_product_3_products' ) );
+		$form->add( new \IPS\Helpers\Form\Node( 'rust_product_3_products', ( \IPS\Settings::i()->rust_product_3_products ) ? explode( ',', \IPS\Settings::i()->rust_product_3_products ) : 0, FALSE, array( 'class' => 'IPS\nexus\Package',  'multiple' => TRUE ), NULL, NULL, NULL, 'rust_product_3_products' ) );
 		
 		
 		
@@ -143,7 +125,7 @@ class _settings extends \IPS\Dispatcher\Controller
 		$form->add(new \IPS\Helpers\Form\Text('rust_product_4_arguments', \IPS\Settings::i()->rust_product_4_arguments, false, array(), null,
             null, null, 'rust_product_4_arguments'));
 		$form->add( new \IPS\Helpers\Form\YesNo( 'rust_product_4_steamID', \IPS\Settings::i()->rust_product_4_steamID ) );
-		$form->add( new \IPS\Helpers\Form\Node( 'rust_product_4_products', ( \IPS\Settings::i()->rust_product_4_products ) ? explode( ',', \IPS\Settings::i()->rust_product_4_products ) : 0, FALSE, array( 'class' => 'IPS\nexus\Package', 'zeroVal' => 'all', 'multiple' => TRUE ), NULL, NULL, NULL, 'rust_product_4_products' ) );
+		$form->add( new \IPS\Helpers\Form\Node( 'rust_product_4_products', ( \IPS\Settings::i()->rust_product_4_products ) ? explode( ',', \IPS\Settings::i()->rust_product_4_products ) : 0, FALSE, array( 'class' => 'IPS\nexus\Package',  'multiple' => TRUE ), NULL, NULL, NULL, 'rust_product_4_products' ) );
 		
 		
 	
