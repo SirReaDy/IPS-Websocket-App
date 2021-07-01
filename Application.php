@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @brief		RconRust Application Class
  * @author		<a href=''>S!r.ReaDy</a>
@@ -8,8 +9,9 @@
  * @since		13 Jan 2021
  * @version		
  */
- 
+
 namespace IPS\rconrust;
+
 require_once __DIR__ . DIRECTORY_SEPARATOR . "sources" . DIRECTORY_SEPARATOR . "vendor" . DIRECTORY_SEPARATOR . "autoload.php";
 
 /**
@@ -17,5 +19,4 @@ require_once __DIR__ . DIRECTORY_SEPARATOR . "sources" . DIRECTORY_SEPARATOR . "
  */
 class _Application extends \IPS\Application
 {
-	
 }
